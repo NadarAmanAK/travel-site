@@ -8,12 +8,23 @@
         margin-right: -100px;
     }
     &--gutter > div{
-        padding: 65px;
+        padding-right: 65px;
         
     }
     &--gutter-large > div{
-        padding: 100px;
+        padding-right: 100px;
         
+    }
+    &--gutter-small{
+        margin-right: -45px;
+        
+    }
+    &--gutter-small > div{
+        padding-right: 45px;
+        
+    }
+    &--t-padding{
+        padding-top: 80px;
     }
    
 
@@ -43,6 +54,7 @@
             float: left;
             width: 66.66%;
         }
+
         
        
     }
@@ -74,5 +86,14 @@
        
     }
  
-
+    /*begin Equal height rules*/
+    &--equal-height-at-medium{
+        @mixin atMedium{
+            display:flex;
+        }
+        & >div{
+            float: none;
+            display: flex;
+        }
+    }
 }
